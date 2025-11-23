@@ -1,4 +1,4 @@
-function displayRecipe(response) {
+function displayRecipe (response) {
     console.log("recipe generated")
 
      new Typewriter("#recipe", {
@@ -12,7 +12,7 @@ function displayRecipe(response) {
 
 function generateRecipe(event) {
   event.preventDefault();
-  let instructionsInput = document.querySelector("#user-instructions");
+      let instructionsInput = document.querySelector("#user-instructions");
   let apiKey = "2bf02005obb4ft73c247eba0b4e8f73d"; 
 
   let context = 
@@ -25,8 +25,11 @@ function generateRecipe(event) {
   console.log(`Prompt:${prompt}`);
   console.log(`Context:${context}`);
 
-  axios.get(apiURL).then(displayRecipe);
+axios.get(apiURL).then(displayRecipe);
+
+
 }
  
+
 let recipeFormElement = document.querySelector("#recipe-generator-form");
 recipeFormElement.addEventListener("submit", generateRecipe);

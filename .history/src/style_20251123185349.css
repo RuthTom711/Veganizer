@@ -7,10 +7,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-a {
-    color: #87B364;
-}
-
 .container {
 
     margin: 20px auto;
@@ -28,7 +24,8 @@ h1 {
     line-height: 1.5;
     color: #272044;
     text-align: center;
-    background: rgba(255, 255, 255, 0.8);    
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
     border-radius: 10px;
 }
 
@@ -59,21 +56,4 @@ form {
     padding: 14px 24px;
     box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
 
-}
-
-.recipe {
-    font-size: 16px;
-    background: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    line-height: 2;
-    border-left: 3px solid #87B364;   
-    border-radius: 10px;
-}
-
-footer {
-    text-align: center;
-    font-size: 14px;
-    margin-top: 10px;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 3px;
 }
